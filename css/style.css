@@ -1,0 +1,361 @@
+@charset "UTF-8";
+/*Обнуление стилей*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------------------------------------------------*/
+body {
+  background-color: #191919;
+  font-family: "DM Sans", sans-serif;
+  padding: 43.8px 0 0 0;
+  color: #fff;
+}
+
+.content {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 0 0 83.3px 0;
+}
+.nav .nav__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .nav__blocks .nav__links .nav__link {
+  display: flex;
+}
+.nav .nav__blocks .nav__links .nav__link li {
+  margin-right: 40px;
+  font-size: 17px;
+}
+.nav .nav__blocks .nav__links .nav__link a {
+  color: #fff;
+}
+.nav .nav__blocks .nav__links .nav__link a:hover {
+  color: #118DA8;
+}
+
+.header {
+  margin: 0 0 93px 0;
+}
+.header .header__blocks {
+  display: flex;
+  align-items: center;
+}
+.header .header__blocks .header__about {
+  margin-left: 60px;
+}
+.header .header__blocks .header__about .header__title {
+  font-size: 70px;
+  letter-spacing: 3.2px;
+  line-height: 88px;
+  width: 526px;
+  margin: 0 0 97px 0;
+}
+.header .header__blocks .header__about .header__title span {
+  font-size: 80px;
+  font-weight: 700;
+}
+.header .header__blocks .header__about .header__listen-on .listen-on__text {
+  font-size: 15px;
+  margin: 0 0 16px 0;
+}
+.header .header__blocks .header__about .header__listen-on .listen-on__links {
+  display: flex;
+}
+.header .header__blocks .header__about .header__listen-on .listen-on__links .listen-on__img {
+  margin: 0 17.05px 0 0;
+}
+.episodes {
+  margin: 0 0 260px 0;
+}
+.episodes .episodes__blocks .episodes__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 66.44px 0;
+}
+.episodes .episodes__blocks .episodes__header .episodes__title {
+  font-size: 64px;
+  letter-spacing: 2.88px;
+}
+.episodes .episodes__blocks .episodes__header .episodes__button a {
+  color: #fff;
+  font-size: 17px;
+  padding: 17px 20px;
+  background-color: #118DA8;
+  border-radius: 6px;
+}
+.episodes .episodes__blocks .episodes__columns .column {
+  background-color: #000;
+  padding: 40px;
+  margin-bottom: 60px;
+  border-radius: 32px;
+  display: flex;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column {
+  width: 100%;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info {
+  margin-left: 53px;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-link {
+  background-color: #191919;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 7px 16px;
+  display: inline-block;
+  margin: 0 0 48.44px 0;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-link a {
+  color: #fff;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-numepisode {
+  color: #118DA8;
+  font-size: 17px;
+  margin: 0 0 18px 0;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-title {
+  line-height: 70.4px;
+  font-size: 64px;
+  letter-spacing: 2.56px;
+  width: 701px;
+  margin: 0 0 28px 0;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-about {
+  font-size: 22px;
+  color: #fff;
+  opacity: 0.7;
+  width: 773px;
+  margin: 0 0 18px 0;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-button {
+  background-color: #118DA8;
+  font-size: 18px;
+  display: flex;
+  width: 208px;
+  height: 51px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+.episodes .episodes__blocks .episodes__columns .episodes__column .column__info .column__info-button a {
+  color: #fff;
+}
+
+.author {
+  margin: 0 0 201px 0;
+}
+.author .author__blocks {
+  display: flex;
+  align-items: center;
+}
+.author .author__blocks .author__info {
+  margin: 0 94px 0 0;
+}
+.author .author__blocks .author__info .author__button {
+  background-color: #118DA8;
+  border-radius: 400px;
+  width: 112px;
+  height: 112px;
+  display: inline-block;
+  margin: 0 0 20px 0;
+}
+.author .author__blocks .author__info .author__button a {
+  display: flex;
+  justify-content: center;
+  padding: 37px 0 0 0;
+}
+.author .author__blocks .author__info .author__button-description {
+  font-size: 18px;
+  color: #118DA8;
+}
+.author .author__blocks .author__info .author__name {
+  font-size: 65px;
+  letter-spacing: 2.68px;
+  margin: 0 0 28px 0;
+}
+.author .author__blocks .author__info .author__about {
+  font-size: 22px;
+  opacity: 0.7;
+  width: 556px;
+}
+.author .author__blocks .author__info .author__about .author__about-1 {
+  padding: 0 0 33px;
+}
+.subscribe {
+  margin: 0 0 200px 0;
+}
+.subscribe .subscribe__blocks {
+  background-color: #000;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 32px;
+}
+.subscribe .subscribe__blocks .subscribe__info .subscribe__newsletter {
+  color: #118DA8;
+  font-size: 18px;
+  margin: 0 0 26px 0;
+}
+.subscribe .subscribe__blocks .subscribe__info .subscribe__title {
+  font-size: 72px;
+  letter-spacing: 2.88px;
+  width: 431px;
+}
+.subscribe .subscribe__blocks .subcribe__form .form__input {
+  display: flex;
+  margin: 0 0 20px 0;
+  background-color: #191919;
+  padding: 26px 19px;
+  width: 522px;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 24px;
+}
+.subscribe .subscribe__blocks .subcribe__form .form__button {
+  font-size: 15px;
+  background-color: #118DA8;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 6px;
+  width: 87px;
+  height: 48px;
+}
+
+.feedback {
+  margin: 0 0 184px 0;
+}
+.feedback .feedback__blocks .feedback__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback .feedback__blocks .feedback__columns .feedback__column {
+  padding: 54px 50px;
+  width: 417px;
+  height: 364px;
+  background-color: #000;
+  border-radius: 32px;
+  margin: 0 16px 16px 0;
+}
+.feedback .feedback__blocks .feedback__columns .feedback__column .star {
+  margin: 0 0 21px 0;
+}
+.feedback .feedback__blocks .feedback__columns .feedback__column .feedback__text {
+  font-size: 36px;
+  margin: 0 0 19px 0;
+  line-height: 43.2px;
+  width: 317px;
+}
+.feedback .feedback__blocks .feedback__columns .feedback__column .feedback__author {
+  font-size: 24px;
+  opacity: 0.7;
+  line-height: 28.8px;
+}
+
+.footer {
+  padding: 0 0 127px 0;
+}
+.footer .footer__blocks {
+  display: flex;
+}
+.footer .footer__blocks a {
+  color: #fff;
+  font-size: 17px;
+}
+.footer .footer__blocks .footer__logo {
+  margin-right: 239.38px;
+}
+.footer .footer__blocks .footer__logo .footer__logo-img {
+  margin: 0 0 20.4px 0;
+}
+.footer .footer__blocks .footer__logo .footer__logo-social a {
+  margin: 0 12px 0 0;
+}
+.footer .footer__blocks .footer__nav {
+  margin-right: 146px;
+}
+.footer .footer__blocks .footer__nav li {
+  margin: 0 0 10px 0;
+}
+.footer .footer__blocks .footer__links {
+  margin-right: 100px;
+}
+.footer .footer__blocks .footer__links li {
+  margin: 0 0px 10px 0;
+}
+.footer .footer__blocks .footer__social img {
+  margin-right: 17px;
+}/*# sourceMappingURL=style.css.map */
